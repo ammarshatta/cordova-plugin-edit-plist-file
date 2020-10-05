@@ -41,6 +41,8 @@
                 <string>soundcloud</string>
                 <string>fb-messenger</string>
                 <string>instagram</string>
+                <string>uaepass</string>
+                <string>uaepassqa</string>
             </array>
         </config-file>
         
