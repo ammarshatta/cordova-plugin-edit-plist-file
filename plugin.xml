@@ -45,8 +45,10 @@
                 <string>uaepassqa</string>
             </array>
         </config-file>
+
         
-        
+        <edit-config target="*-Info.plist" parent="NSCameraUsageDescription" overwrite="true"> <string>This app needs access to the camera to take photos.</string> </edit-config> <edit-config target="*-Info.plist" parent="NSPhotoLibraryUsageDescription" overwrite="true"> <string>This app needs access to the photo library to pick images.</string> </edit-config> <edit-config parent="NSLocationWhenInUseUsageDescription" target="*-Info.plist" overwrite="true"> <string>We are using your location in case emergency is requested to send your location to your saved person information.</string> </edit-config>
+
         
     </platform>
     
