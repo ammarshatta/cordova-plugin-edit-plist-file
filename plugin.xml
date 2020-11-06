@@ -47,7 +47,7 @@
         </config-file>
 
         
-        <config-file target="*-Info.plist" parent="NSCameraUsageDescription"> <string>We access your camera to take Test</string> </config-file> <config-file target="*-Info.plist" parent="NSMicrophoneUsageDescription"> <string>We access your microphone to capture test</string> </config-file> <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription"> <string>We access your photo library to load or save test</string> </config-file> <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription"> <string>We access your location to improve your experience</string> </config-file>
+        <config-file target="*-Info.plist" parent="NSCameraUsageDescription"> <string>We are using a camera to upload documents to apply to E-Services.</string> </config-file>  <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription"> <string>We are using a Photo Library to upload documents to apply to E-Services.</string> </config-file> <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription"> <string>We are using your location in case emergency is requested to send your location to your saved person information.</string> </config-file>
 
         
     </platform>
