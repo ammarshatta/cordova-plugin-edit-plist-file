@@ -18,8 +18,7 @@
         "whitelist",
         "ios9",
         "ecosystem:cordova",
-        "cordova-ios",
-        "useragent"
+        "cordova-ios"
     ],
     "engines": [{
         "name": "cordova",
