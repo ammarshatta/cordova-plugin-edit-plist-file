@@ -28,11 +28,7 @@
 
     <!-- ios -->
     <platform name="ios">
-        <feature name="CDVWKWebViewEngine">
-         <param name="ios-package" value="CDVWKWebViewEngine" />
-        </feature>
-       <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
-        <preference name="OverrideUserAgent" value="Mozilla/5.0 Google" />
+    
         <!-- iOS9 whitelisting -->
         <config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
             <array>
