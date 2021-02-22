@@ -48,8 +48,8 @@
 
         
         <config-file target="*-Info.plist" parent="NSCameraUsageDescription"> <string>We are using a camera to upload documents to apply to E-Services.</string> </config-file>  <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription"> <string>We are using a Photo Library to upload documents to apply to E-Services.</string> </config-file> <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription"> <string>We are using your location in case emergency is requested to send your location to your saved person information.</string> </config-file>
-
-         <preference name="InAppBrowserOverrideUserAgent" value="Mozilla/5.0 Google" />
+        
+         <config-file target="*-Info.plist" parent="OverrideUserAgent"> <string>Mozilla/5.0 Google</string> </config-file>
     </platform>
     
 </plugin>
