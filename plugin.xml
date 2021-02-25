@@ -27,15 +27,7 @@
 	<js-module src="www/UserAgent.js" name="UserAgent">
 		<clobbers target="UserAgent" />
 	</js-module>
-    <platform name="android">
-		<config-file target="res/xml/config.xml" parent="/*">
-			<feature name="UserAgent" >
-				<param name="android-package" value="cordova-plugin-edit-plist-file"/>
-                                <param name="onload" value="true" />
-			</feature>
-		</config-file>
-		<source-file src="src/android/UserAgent.java" target-dir="src/im/ltdev/cordova/UserAgent" />
-	</platform>
+
 
     <!-- ios -->
     <platform name="ios">
