@@ -44,8 +44,14 @@
                 <string>uaepassqa</string>
             </array>
         </config-file>
+<preference name="WKWebViewOnly" value="true" />
 
-        
+    <feature name="CDVWKWebViewEngine">
+        <param name="ios-package" value="CDVWKWebViewEngine" />
+    </feature>
+
+    <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+        <preference name="OverrideUserAgent" value="Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36" />
         <config-file target="*-Info.plist" parent="NSCameraUsageDescription"> <string>We are using a camera to upload documents to apply to E-Services.</string> </config-file>  <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription"> <string>We are using a Photo Library to upload documents to apply to E-Services.</string> </config-file> <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription"> <string>We are using your location in case emergency is requested to send your location to your saved person information.</string> </config-file>
 
     </platform>
