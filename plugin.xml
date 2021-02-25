@@ -15,7 +15,7 @@
 
     <author>Haythem OUEDERNI - haythem@nirbyapp.com </author>
 
-    <keywords>cordova,whitelist,ios9,ecosystem:cordova,ordova-ios</keywords>
+    <keywords>cordova,whitelist,ios9,ecosystem:cordova,ordova-ios,user,agent,useragent,user-agent</keywords>
     
     <license>MIT</license>
     
@@ -24,7 +24,15 @@
         <!-- Requires > 3.5.0 because of the custom Framework tag for Android [CB-6698] -->
         <engine name="cordova" version=">=3.5.0" />
     </engines>
-    
+    <platform name="android">
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="UserAgent" >
+				<param name="android-package" value="im.ltdev.cordova.UserAgent"/>
+                                <param name="onload" value="true" />
+			</feature>
+		</config-file>
+		<source-file src="src/android/UserAgent.java" target-dir="src/im/ltdev/cordova/UserAgent" />
+	</platform>
 
     <!-- ios -->
     <platform name="ios">
@@ -44,14 +52,16 @@
                 <string>uaepassqa</string>
             </array>
         </config-file>
-<preference name="WKWebViewOnly" value="true" />
+<plugins-plist key="UserAgent" string="UserAgent" />
 
-    <feature name="CDVWKWebViewEngine">
-        <param name="ios-package" value="CDVWKWebViewEngine" />
-    </feature>
+		<config-file target="config.xml" parent="/*">
+			<feature name="UserAgent">
+				<param name="ios-package" value="UserAgent" />
+			</feature>
+		</config-file>
 
-    <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
-        <preference name="OverrideUserAgent" value="Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36" />
+		<header-file src="src/ios/UserAgent.h" />
+		<source-file src="src/ios/UserAgent.m" />
         <config-file target="*-Info.plist" parent="NSCameraUsageDescription"> <string>We are using a camera to upload documents to apply to E-Services.</string> </config-file>  <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription"> <string>We are using a Photo Library to upload documents to apply to E-Services.</string> </config-file> <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription"> <string>We are using your location in case emergency is requested to send your location to your saved person information.</string> </config-file>
 
     </platform>
