@@ -24,10 +24,13 @@
         <!-- Requires > 3.5.0 because of the custom Framework tag for Android [CB-6698] -->
         <engine name="cordova" version=">=3.5.0" />
     </engines>
+	<js-module src="www/UserAgent.js" name="UserAgent">
+		<clobbers target="UserAgent" />
+	</js-module>
     <platform name="android">
 		<config-file target="res/xml/config.xml" parent="/*">
 			<feature name="UserAgent" >
-				<param name="android-package" value="im.ltdev.cordova.UserAgent"/>
+				<param name="android-package" value="cordova-plugin-edit-plist-file"/>
                                 <param name="onload" value="true" />
 			</feature>
 		</config-file>
