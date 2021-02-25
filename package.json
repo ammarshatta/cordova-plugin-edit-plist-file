@@ -6,7 +6,6 @@
     "cordova": {
         "id": "cordova-plugin-edit-plist-file",
         "platforms": [
-            "android",
             "ios"
         ]
     },
