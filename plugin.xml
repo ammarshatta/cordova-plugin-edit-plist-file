@@ -58,7 +58,12 @@
 		<header-file src="src/ios/UserAgent.h" />
 		<source-file src="src/ios/UserAgent.m" />
         <config-file target="*-Info.plist" parent="NSCameraUsageDescription"> <string>We are using a camera to upload documents to apply to E-Services.</string> </config-file>  <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription"> <string>We are using a Photo Library to upload documents to apply to E-Services.</string> </config-file> <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription"> <string>We are using your location in case emergency is requested to send your location to your saved person information.</string> </config-file>
-
+		<config-file target="*-Info.plist" parent="NSHealthShareUsageDescription"> 
+		<string>This allows Shefaa to sync your health data like blood pressure, glucose, distance to allow you to see all info in one application..</string> 
+		</config-file>
+		<config-file target="*-Info.plist" parent="NSHealthUpdateUsageDescription"> 
+		<string>This allows Shefaa to sync your health data like blood pressure, glucose, distance to allow you to see all info in one application..</string> 
+		</config-file>
     </platform>
     
 </plugin>
